@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int main() {
+     int branco=255 , preto=0, cinza=127 , l ,c, media=0 , q[5][5];
+        
+            for(l=0 ; l < 5; l++){
+                
+                for(c=0 ; c < 5 ; c++){
+                q[l][c] = media;
+                  
+                  if(media==255){
+                    printf("255");
+                }
+                   
+                 else if(media==127){
+                    printf("127");
+                    
+                }
+              else();
+              {  
+             printf("0");
+            
+              }   
+           }
+      }
+     
+    
+ 
+    return 0;
+}
