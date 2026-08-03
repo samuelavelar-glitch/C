@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdbool.h>
+int main() {
+    bool remoto = true ,num;
+       int entrada;
+        scanf("%d",&num);
+         num=entrada;
+               if(num == true){
+            printf("ta on\n");
+        }else{
+            printf("ta off\n");
+        }
+       if(remoto == true){
+            printf("ta off\n");
+        }else{
+            printf("ta on\n");
+        }
+        
+    return 0;
+}
