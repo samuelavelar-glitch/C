@@ -3,11 +3,11 @@
 int main() {
     float valor_por_hora , horas_trabalhadas , Salario;
      int id_funcionario;
-     scanf("%d",&id_funcionario);
-     scanf("%f",&valor_por_hora);
-     scanf("%f",&horas_trabalhadas);
-     Salario = (valor_por_hora*horas_trabalhadas);
-     printf("NUMBER %d\n",id_funcionario);
-     printf("SALARY = U$ 2f\n", Salario);
+       scanf("%d",&id_funcionario);
+         scanf("%f",&valor_por_hora);
+          scanf("%f",&horas_trabalhadas);
+            Salario = (valor_por_hora*horas_trabalhadas);
+              printf("NUMBER %d\n",id_funcionario);
+               printf("SALARY = U$ 2f\n", Salario);
     return 0;
 }
