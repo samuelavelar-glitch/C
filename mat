@@ -1,0 +1,33 @@
+int main()
+{
+   int mat[5][5] ,i ,j, num = 2; 
+   
+   for(i=0 ; i<5; i++){
+       
+          for(j=0 ; j<5; j++){
+
+            mat  [i][j] =( num*i+j);
+             printf("\n");
+
+          }
+      
+        
+   }
+    for(i=5 ; i>0; i--){
+        
+            for(j=5 ; j>0; j--){
+                
+                
+            printf("%.1d\t",mat[i][j]);
+
+            }
+                
+
+        printf("\n");
+        
+    }
+          
+
+
+    return 0;
+}
