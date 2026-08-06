@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+
+int a = 2;
+float b = 3.0;
+double c = 4.0;
+printf("o valor de a é %d\n", a);
+printf("o valor de b é %f\n",b);
+printf("o valor de c é %lf\n",c);
+
+
+printf("o valor de a é %d"" e de b eh %f e de c  + eh %lf\n ", a , b , c);
+
+
+
+return 0;
+}
+
+
