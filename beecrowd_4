@@ -8,6 +8,6 @@ int main() {
           scanf("%f",&horas_trabalhadas);
             Salario = (valor_por_hora*horas_trabalhadas);
               printf("NUMBER %d\n",id_funcionario);
-               printf("SALARY = U$ 2f\n", Salario);
+               printf("SALARY = U$ %.2f\n", Salario);
     return 0;
 }
