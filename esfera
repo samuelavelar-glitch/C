@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+
+  double pi = 3.14159 , r , volume;
+     scanf("%lf", & r );
+      volume = pi * 0.75 * r*r*r;
+        printf("VOLUME = %lf", volume);
+
+    return 0;
+}
