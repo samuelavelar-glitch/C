@@ -6,7 +6,7 @@ int main() {
           scanf("%lf",&b);
          scanf("%lf",&c);
       triangulo = a*c/2;
-      circulo = c*3.14159;
+      circulo = c*c*3.14159;
         trap = (a+b)*c/2;
         quadrado = b*b;
         retangulo = a*b;
