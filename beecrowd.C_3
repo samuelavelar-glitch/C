@@ -1,16 +1,13 @@
-
 #include <stdio.h>
 
 int main()
 {
-      double A , B , M = 0.0 , PESO_1= 3.75  , PESO_2=7.5 , soma_1 , soma_2;
-      
+      double A , B , PESO_1= 3.5  , PESO_2=7.5;
+      double Media ;
         scanf("%lf",&A);
         scanf("%lf",&B);
-        soma_1=A*PESO_1;
-        soma_2=B*PESO_2;
-          MEDIA = (A * PESO_1 + B * PESO_2) / ( PESO_1 + PESO_2 );
-           printf("MEDIA = %.5lf\n",MEDIA);
+          Media = (A * PESO_1 + B * PESO_2) / ( PESO_1 + PESO_2 );
+           printf("MEDIA =  %.5lf\n",Media);
 
     return 0;
 }
