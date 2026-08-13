@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+  int qtd ,id ;
+   float cachorroquente= 4.00 , xsalada=4.50 , xbacon=5.00 , torrada=2.00, refrigerante=1.50 , total;
+     scanf("%d",&id);
+     if(id == 1){
+
+        scanf("%d",&qtd);
+        total = qtd*cachorroquente;
+        printf("Total: R$ %.2f\n",total);
+     }
+      if(id == 2){
+
+        scanf("%d",&qtd);
+        total = qtd*xsalada;
+        printf("Total: R$ %.2f\n",total);
+     }
+     if(id == 3){
+
+        scanf("%d",&qtd);
+        total = qtd*xbacon;
+        printf("Total: R$ %.2f\n",total);
+     }
+
+      if(id == 4){
+
+        scanf("%d",&qtd);
+        total = qtd*torrada;
+        printf("Total: R$ %.2f\n",total);
+     }      if(id == 5){
+
+        scanf("%d",&qtd);
+        total = qtd*refrigerante;
+        printf("Total: R$ %.2f\n",total);
+     }
+    return 0;
+}
