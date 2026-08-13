@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include  <math.h>
+int main() {
+
+ float N ;
+    scanf("%f",&N);
+ 
+
+    printf(" %.f nota(s) de R$ 100,00 \n", N/100.00);
+     N  =  fmod( N,100.00);
+    printf(" %.f nota(s) de R$ 50,00\n ", N/50.00);
+     N  =  fmod( N ,50.00);
+    printf("%.f nota(s) de R$ 20,00 \n", N/20.00);
+     N  =  fmod( N ,20.00);
+
+    printf(" %.f nota(s) de R$ 10,00 \n", N/10.00);
+     N  =  fmod( N ,10.00);
+
+    printf(" %.f nota(s) de R$ 5,00 \n", N/5.00);
+     N  =  fmod( N ,5.00);
+
+    printf(" %.f nota(s) de R$ 2,00 \n", N/2.00);
+     N  =  fmod( N ,2.00);
+
+   printf(" %.f moeda(s) (s) de R$ 1,00 \n",N/1.00);
+     N  =  fmod( N ,1.00);
+     printf(" %.f moeda(s) (s) de R$ 0.50 \n",N/0.50);
+     N  =  fmod( N ,0.50);
+       printf(" %.f moeda(s) (s) de R$0.25 \n",N/0.25);
+       N  =  fmod( N ,0.25);
+        printf(" %.f moeda(s) (s) de R$0.10 \n",N/0.10);
+      N  =  fmod( N ,0.10);
+         printf(" %.f moeda(s) (s) de R$0.05 \n",N/0.05);
+     N  =  fmod( N ,0.05);
+        printf(" %.f moeda(s) (s) de R$0.01 \n",N/0.01);
+        N  =  fmod( N ,0.01);
+   
+    return 0;
+
+}
