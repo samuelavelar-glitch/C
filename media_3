@@ -1,0 +1,33 @@
+
+#include <stdio.h>
+
+int main()
+{
+        float n1 ,n2 , n3 ,n4,media , nexame ,media2 ;
+        scanf("%f %f %f %f", &n1,&n2,&n3,&n4);
+             media = (  (n1*2 +  n2*3) + ( n3*4 + n4) )/10.0;
+            if(media>=7.0){
+               printf("Media:%f\n");
+                printf("aprovado\n");
+            }
+           if(media<5.0){
+                printf("reprovado\n");
+            }
+            if(media>=5.0 && media <=6.9) {
+                printf("em exame\n");
+               scanf("%f",&nexame);
+            printf("Nota do exame: %f\n",nexame);
+             media2 = (media+nexame)/2;
+            }
+          
+           if(media2 >= 5.0){
+               printf("aprovado\n");
+           }
+           else
+           {
+               printf("reprovado\n");
+              
+           }
+           
+            return 0;
+}
