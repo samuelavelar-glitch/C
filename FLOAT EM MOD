@@ -1,40 +1,47 @@
 #include <stdio.h>
-#include  <math.h>
+
 int main() {
+    float N;
+    scanf("%f", &N);
 
- float N ;
-    scanf("%f",&N);
- 
+    int centavos = (int)(N * 100 + 0.5);
 
-    printf(" %.f nota(s) de R$ 100,00 \n", N/100.00);
-     N  =  fmod( N,100.00);
-    printf(" %.f nota(s) de R$ 50,00\n ", N/50.00);
-     N  =  fmod( N ,50.00);
-    printf("%.f nota(s) de R$ 20,00 \n", N/20.00);
-     N  =  fmod( N ,20.00);
+    printf("NOTAS:\n");
+    printf("%d nota(s) de R$ 100.00\n", centavos / 10000);
+    centavos = centavos % 10000;
 
-    printf(" %.f nota(s) de R$ 10,00 \n", N/10.00);
-     N  =  fmod( N ,10.00);
+    printf("%d nota(s) de R$ 50.00\n", centavos / 5000);
+    centavos = centavos % 5000;
 
-    printf(" %.f nota(s) de R$ 5,00 \n", N/5.00);
-     N  =  fmod( N ,5.00);
-
-    printf(" %.f nota(s) de R$ 2,00 \n", N/2.00);
-     N  =  fmod( N ,2.00);
-
-   printf(" %.f moeda(s) (s) de R$ 1,00 \n",N/1.00);
-     N  =  fmod( N ,1.00);
-     printf(" %.f moeda(s) (s) de R$ 0.50 \n",N/0.50);
-     N  =  fmod( N ,0.50);
-       printf(" %.f moeda(s) (s) de R$0.25 \n",N/0.25);
-       N  =  fmod( N ,0.25);
-        printf(" %.f moeda(s) (s) de R$0.10 \n",N/0.10);
-      N  =  fmod( N ,0.10);
-         printf(" %.f moeda(s) (s) de R$0.05 \n",N/0.05);
-     N  =  fmod( N ,0.05);
-        printf(" %.f moeda(s) (s) de R$0.01 \n",N/0.01);
-        N  =  fmod( N ,0.01);
-   
-    return 0;
-
-}
+      printf("%d nota(s) de R$ 20.00\n", centavos / 2000);
+      centavos = centavos % 2000;
+    
+        printf("%d nota(s) de R$ 10.00\n", centavos / 1000);
+        centavos = centavos % 1000;
+    
+        printf("%d nota(s) de R$ 5.00\n", centavos / 500);
+        centavos = centavos % 500;
+    
+           printf("%d nota(s) de R$ 2.00\n", centavos / 200);
+           centavos = centavos % 200;
+       
+              printf("MOEDAS:\n");
+              printf("%d moeda(s) de R$ 1.00\n", centavos / 100);
+              centavos = centavos % 100;
+          
+                  printf("%d moeda(s) de R$ 0.50\n", centavos / 50);
+                  centavos = centavos % 50;
+              
+                  printf("%d moeda(s) de R$ 0.25\n", centavos / 25);
+                  centavos = centavos % 25;
+              
+                  printf("%d moeda(s) de R$ 0.10\n", centavos / 10);
+                  centavos = centavos % 10;
+              
+                  printf("%d moeda(s) de R$ 0.05\n", centavos / 5);
+                  centavos = centavos % 5;
+              
+                  printf("%d moeda(s) de R$ 0.01\n", centavos);
+              
+                  return 0;
+              }
