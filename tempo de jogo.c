@@ -1,9 +1,12 @@
 #include <stdio.h>
- 
+//codigo incompleto//
+//andre backes//
+
 int main() {
  
-  int hora1 , minu1, hora2 , minu2 , temp1 , temp2;
- 
+  int hora1 , minu1, hora2 , minu2 ;
+  int  temp1 = hora1 * 60 + minu1;   
+  int  temp2 = hora2 * 60 + minu2;                
   scanf("%d %d", &hora1 ,&minu1);
      
      scanf("%d %d", &hora2 ,&minu2);
@@ -22,7 +25,7 @@ int main() {
      
      else  if(hora1 >  hora2 || minu1 > minu2){
          temp1 = (hora1-hora2 + 24);
-            temp2 = (minu1-minu2);
+            temp2 = (minu1-minu2 );
          printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",temp1 , temp2);
      }
  
