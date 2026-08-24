@@ -1,0 +1,33 @@
+#include <stdio.h>
+ 
+int main() {
+     float valor , taxa = 0.00;
+    
+     scanf("%f",&valor);
+    
+     
+       if(valor >= 2000.01 && valor <= 3000.00){
+           taxa = (valor - 2000.00) * 0.08;
+          
+         printf("R$ %.2f\n",taxa);
+         
+     }
+       if(valor >= 3000.01 && valor <= 4500.00){
+             taxa = (1000.00 * 0.08) + ((valor - 3000.00) * 0.18);
+          
+         printf("R$ %.2f\n",taxa);
+         
+     }
+      if(valor > 4500.00){
+        taxa =  (1000.00 * 0.08) + (1500.00 * 0.18) + ((valor - 4500.00) * 0.28);
+          
+         printf("R$ %.2f\n",taxa);
+         
+     }
+          if(valor <= 2000.00){
+        
+         printf("Isento\n");
+         return 0;
+          }
+    return 0;
+}
