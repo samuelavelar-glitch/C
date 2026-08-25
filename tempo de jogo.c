@@ -1,34 +1,24 @@
 #include <stdio.h>
-//codigo incompleto//
-//andre backes//
 
 int main() {
- 
-  int hora1 , minu1, hora2 , minu2 ;
-  int  temp1 = hora1 * 60 + minu1;   
-  int  temp2 = hora2 * 60 + minu2;                
-  scanf("%d %d", &hora1 ,&minu1);
-     
-     scanf("%d %d", &hora2 ,&minu2);
-     
-     if(hora1 ==  hora2 && minu1 == minu2){
-         printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
-         return 0;
-     }
-        
-   else  if(hora1 <  hora2 && minu1 < minu2){
-         temp1 = (hora2-hora1);
-            temp2 = (minu2-minu1);
-         printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",temp1 , temp2);
-         
-     }
-     
-     else  if(hora1 >  hora2 || minu1 > minu2){
-         temp1 = (hora1-hora2 + 24);
-            temp2 = (minu1-minu2 );
-         printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",temp1 , temp2);
-     }
- 
- 
+    int hora1, minu1, hora2, minu2;
+     int inicio_minutos ,  fim_minutos;
+     int duracao_total , duracao_minutos , duracao_horas ;
+    scanf("%d %d %d %d", &hora1, &minu1, &hora2, &minu2);
+    
+     inicio_minutos = hora1 * 60 + minu1;
+     fim_minutos = hora2 * 60 + minu2;
+    
+    if (fim_minutos <= inicio_minutos) {
+        fim_minutos += 24 * 60;
+    }
+    
+    duracao_total = fim_minutos - inicio_minutos;
+    
+     duracao_horas = duracao_total / 60;
+     duracao_minutos = duracao_total % 60;
+    
+    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", duracao_horas, duracao_minutos);
+    
     return 0;
 }
