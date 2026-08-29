@@ -1,0 +1,17 @@
+#include <stdio.h>
+  int main(){
+
+        int i , impares = 0 , pares = 0;
+            for(i = 0 ; i < 900 ; i++){
+                if( i % 2 == 0){
+                    pares++;
+                }else{
+                impares++;
+                        }
+                    }
+            printf(" pares %d\n" , pares);
+            printf(" impares %d\n",impares);
+    return 0;
+  }
+
+
