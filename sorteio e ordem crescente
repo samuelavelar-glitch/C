@@ -10,22 +10,15 @@ int main() {
    y = y1;
    z = z1;
   
-  if( x < y && y < z){
-       
-    printf("%d \n %d \n %d\n " , x,y,z);
-       
-   }
-     if( x < y && y < z){
-       
-    printf("%d \n %d \n %d\n " , x,y,z);
-       
-   }
-   
- 
- 
- 
- 
- 
- 
-    return 0;
+if (x > y) { temp = x; x = y; y = temp; }
+   if (x > z) { temp = x; x = z; z = temp; }
+   if (y > z) { temp = y; y = z; z = temp; }
+
+        printf("%d\n%d\n%d\n", x, y, z);
+
+        printf("\n");
+
+        printf("%d\n%d\n%d\n", x1, y1, z1);
+
+   return 0;
 }
