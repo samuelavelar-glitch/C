@@ -6,9 +6,11 @@ int main() {
    int temp;
    scanf("%d %d %d" , &x ,&y , &z);
     
-   x = x1;
-   y = y1;
-   z = z1;
+  
+   x1 = x;
+   y1 = y;
+   z1 = z;
+
   
 if (x > y) { temp = x; x = y; y = temp; }
    if (x > z) { temp = x; x = z; z = temp; }
