@@ -1,24 +1,81 @@
 #include <stdio.h>
 
 int main() {
-    int hora1, minu1, hora2, minu2;
-     int inicio_minutos ,  fim_minutos;
-     int duracao_total , duracao_minutos , duracao_horas ;
-    scanf("%d %d %d %d", &hora1, &minu1, &hora2, &minu2);
-    
-     inicio_minutos = hora1 * 60 + minu1;
-     fim_minutos = hora2 * 60 + minu2;
-    
-    if (fim_minutos <= inicio_minutos) {
-        fim_minutos += 24 * 60;
-    }
-    
-    duracao_total = fim_minutos - inicio_minutos;
-    
-     duracao_horas = duracao_total / 60;
-     duracao_minutos = duracao_total % 60;
-    
-    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", duracao_horas, duracao_minutos);
-    
+
+    int h1 , h2 , m1 , m2 , total , totalm;
+
+        scanf("%d %d %d %d" , &h1 , &m1 , &h2 , &m2);
+                if(h1 == h2 && m1 == m2){
+
+                    printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+
+
+                }
+                   else if(h1 < h2 && m1 == m2){
+
+                        total = h2-h1;
+                        totalm = m2-m1;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+                    else if(h1 == h2 && m1 < m2){
+
+                        total = h2-h1;
+                        totalm = m2-m1;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+                    else if(h1 > h2 && m1 > m2){
+
+                        total = (24 - h1 ) + h2 - 1;
+                        totalm = (60-m1) + m2;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+                     else if(h1 < h2 && m1 < m2){
+
+                        total = h2-h1;
+                        totalm = m2-m1;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+                  else if(h1 > h2 && m1 < m2){
+
+                        total = ((24 - h1)+ h2);
+                        totalm = m2-m1;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+
+                    else if(h1 > h2 && m1 == m2){
+
+                        total = ((24 - h1 ) + h2);
+                        totalm = m2-m1;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+                    else if(h1 == h2 && m1 > m2){
+
+                        total = (24 + h2-h1) - 1;
+                        totalm = (60 - m1)+m2;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+                else if(h1 < h2 && m1 > m2){
+
+                        total = (h2-h1) - 1 ;
+                        totalm = (60 - m1)+m2;
+                    printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",total , totalm );
+
+
+                }
+
     return 0;
 }
