@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+
+   int x , y , s1 , s2 , st ,i  , cont ;
+
+   scanf("%d" ,&x);
+      scanf("%d",&y);
+     for(i=0 ; i<x ; i++){
+
+         if(i < x || i > x && i % 2 == 1 ){
+           cont++;
+           s1 = (i+i);
+         }
+
+
+        }
+         for(i=0; i<y ; i++){
+
+        if(i < y || i > y && i % 2 == 1 ){
+           cont++;w
+           s2 = (i+i);
+         }
+
+     }
+         st = s1 + s2;
+         printf("%d", st);
+
+    return 0;
+}
