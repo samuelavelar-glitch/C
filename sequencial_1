@@ -10,7 +10,7 @@ int main(){
     return 0;
     
 }
-
+  \\nao copiar\\
   \\ versao bugada precisa refazer e modificar\\
     #include <stdio.h> 
 int main(){ 
