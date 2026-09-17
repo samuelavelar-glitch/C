@@ -1,7 +1,7 @@
 #include <stdio.h>
  int main (){
 
-int bom = 0:
+int bom = 0;
 
 while ( bom < 10){
 
