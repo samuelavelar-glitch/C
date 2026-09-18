@@ -1,42 +1,49 @@
 #include <stdio.h>
- int main() {
-    char c , r , s , tipo ;
-    int  total  , i  , n , soma , quantia, p1 , p2 ,p3 ;
-       
-      scanf("%d",&n);
-          for( i = 0 ; i < n ; i++){
-             
-             
-                scanf("%c %d", &c , &q1);
-                scanf("%c %d", &r , &q2);
-                scanf("%c %d", &s , &q3);
-                
-                if(){
-                    
-                    
-                }
-                else if(){
-                    
-                    
-                    
-                    
-                }
-                  else if(){
-                    
-                    
+int main() {
+        	char tipo ;
+        	int  total=0, i, n, soma, quantia ;
+           int c1 = 0, c2 = 0, c3 = 0;
+           double p1=0.00, p2=0.00,p3=0.00;
+        	scanf("%d",&n);
+        	for( i = 0 ; i < n ; i++) {
+        
+        
+        		scanf("%d %c", &quantia, &tipo);
+        
 
-                    
-                }
-              
-                total = q1 + q2 + q3;
+        
+        		if(tipo == 'c'|| tipo == 'C') {
+        			c1 += quantia;
+        
+        		}
+        		else if(tipo == 'r'|| tipo == 'R') {
+        
+        			c2 += quantia;
+        
+        
+        
+        		}
+        		else if(tipo == 's'|| tipo == 'S') {
+        			c3 += quantia;
+        
+        		}
+        	}
+        		total = c1 + c2 + c3;
+                 if (total > 0){
                  
-                p1 = (q1/total)*100; 
-                p2 = (q2/total)*100; 
-                p3 = (q3/total)*100; 
+           	p1 = (c1*100.0)/total;
+            p2 = (c2*100.0)/total;
+           	p3 = (c3*100.0)/total;        
+             }
+        		
+            printf("Total: %d cobaias\n", total);
+            printf("Total de coelhos: %d\n", c1);
+            printf("Total de ratos: %d\n", c2);
+            printf("Total de sapos: %d\n", c3);
+            printf("Percentual de coelhos: %.2lf %%\n", p1);
+            printf("Percentual de ratos: %.2lf %%\n", p2);
+            printf("Percentual de sapos: %.2lf %%\n", p3);
 
-                    
-          }
-            
-    return 0;
+	return 0;
 }
 
