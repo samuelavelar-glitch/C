@@ -1,0 +1,58 @@
+#include <stdio.h>
+
+int main (){
+
+  int vet[20] , i , j , temp;
+
+       for(i = 0 ; i < 20 ; i++){
+
+            printf("digite um valor %d\n" ,i+1);
+
+             scanf("%d", &vet[i]);
+       }
+      for(i = 0 ; i < 19 ;i++){
+          for(j = 0; j < 19 - i; j++) {
+            temp = vet[j];
+             vet[j] = vet[j+1];
+               vet[j+1] = temp;
+        }
+      }
+
+        printf("\n vetor ordenado\n");
+            for(i = 0 ; i < 20 ; i++){
+                printf("%d ", vet[i]);
+            }
+             printf("\n");
+
+
+
+       for (i = 0 ; i < 20 ; i++){
+
+           if( vet[i] % 2 != 0){
+
+             for (j = i ; j < 19 ; j++){
+                vet[j] = vet[j+1];
+           }
+           vet[19] = 0;
+           i--;
+       }
+
+    }
+        printf("\n2vetor apos retirar os impares\n");
+
+         for( i = 0 ; i < 20 ; i++){
+
+           printf(" %d ",vet[i]);
+
+         }
+
+            for(i = 0 ; i < 20 ; i++){
+
+
+
+
+            }
+
+ return 0;
+
+}
