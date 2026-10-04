@@ -18,13 +18,13 @@ int main() {
 
             
         }       
-    else if(strcmp(nome1, "vertebrados") == 0 && strcmp(nome2, "mamifero") == 0 && strcmp(nome3, "onivoro") == 0){
+    else if(strcmp(nome1, "vertebrado") == 0 && strcmp(nome2, "mamifero") == 0 && strcmp(nome3, "onivoro") == 0){
             
                 printf("homem\n");
 
             
         }       
-    else if(strcmp(nome1, "vertebrados") == 0 && strcmp(nome2, "mamifero") == 0 && strcmp(nome3, "herbivoro") == 0){
+    else if(strcmp(nome1, "vertebrado") == 0 && strcmp(nome2, "mamifero") == 0 && strcmp(nome3, "herbivoro") == 0){
             
                 printf("vaca\n");
 
