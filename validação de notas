@@ -1,0 +1,28 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+  float n1=0 ,n2=0 ,  nota ,media; 
+    int notas_validas=0;
+
+         while(notas_validas <2)
+         {
+                 scanf("%f",&nota);
+                  
+                 if(nota >= 0.0 && nota <=10.0){
+                     notas_validas++;
+                     
+                 if(notas_validas==1){
+                     n1 = nota;
+                 }else{
+                     n2 = nota;
+                 }
+               
+                 }else{
+                     printf("nota invalida\n");
+                 }
+         }
+           media = (n1 + n2)/2.0;
+           printf("media = %.2f\n",media);
+    return 0;
+}
