@@ -1,0 +1,40 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+  int golsinter=0 , golsgre=0 , op=0 ,inter=0 , gre=0 ,empate=0 , jogos=0;
+    
+      while(op != 2){
+     scanf("%d %d",&golsinter,&golsgre);
+     jogos++;
+    printf("Novo grenal (1-sim 2-nao)\n");
+     scanf("%d",&op);
+  
+      if(golsinter > golsgre){
+          inter++;
+      }
+     else if(golsinter < golsgre){
+          gre++;
+      }
+      else if (golsinter == golsgre){
+          empate++;
+      }
+          
+        
+          
+      }
+       printf("%d grenais\n",jogos);
+       printf("Inter:%d\n",inter);
+       printf("Gremio:%d\n",gre);
+       printf("Empates:%d\n",empate);
+        if(inter > gre){
+        printf("Inter venceu mais\n");  
+      }else if(inter < gre){
+        printf("Gremio venceu mais\n");    
+      }else{
+      printf("Nao houve vencedor\n"); 
+      }
+  
+ 
+    return 0;
+}
