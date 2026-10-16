@@ -16,7 +16,7 @@ int main() {
                     printf("127");
                     
                 }
-              else();
+              else if(###);
               {  
              printf("0");
             
