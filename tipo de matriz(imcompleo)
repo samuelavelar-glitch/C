@@ -1,0 +1,24 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    int i=0,j=0,x,y;
+   
+     scanf("%d %d",&x,&y);
+     int mat[x][y];
+     for(i=0;i<=x;i++){
+        
+        for(j=0;j<=y;j++){
+            printf("(%d,%d)",i + 1,j + 1);
+        }
+         printf("\n");
+         
+         
+     }
+      printf("tipo da matriz\n");
+       printf("matriz %dX%d\n",x,y);
+        
+    return 0;
+}
