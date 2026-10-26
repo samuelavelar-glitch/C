@@ -1,0 +1,19 @@
+#include <stdio.h>
+ /* tem arrumar os for pro i com e fazer que o j acompanha o i*/
+int main() {
+    
+   float i;
+   for (i = 0 ; i <= 3 ; i+0.1){
+                  i = i + 0.1;
+         for ( int j = 1 ; j <= 3 ; j++){
+        
+           printf("I=%.1f J=%.1d\n",i,j);
+            
+           
+         }
+   
+       
+   }
+   
+  return 0;
+   }
