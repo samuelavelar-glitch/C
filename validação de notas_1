@@ -1,0 +1,22 @@
+#include <stdio.h>
+ 
+int main() {
+   int op=1; 
+   float n , n2 , media=0;
+    while(op !=2){
+        scanf("%f",&n);
+        scanf("%f",&n2);
+       if(n>=0 && n<=10 && n2>=0 && n2<=10){
+          media = (n+n2)/2.0;  
+           printf("%.2f\n",media);
+       }else{
+           printf("nota invalida\n");
+       }
+        media=0;
+        printf("novo calculo (1-sim 2-nao)\n");
+         scanf("%d",&op);
+     
+        
+    }
+    return 0;
+}
