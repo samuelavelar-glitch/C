@@ -19,4 +19,37 @@ int main() {
         
     }
     return 0;
+} 
+/*
+#include <stdio.h>
+ 
+int main() {
+   int op=1; 
+   float n , n2 , media=0;
+    while(op !=2){
+       n=-1;
+       while(n>0 || n<10){
+         scanf("%f",&n);
+        if(n<0 || n>10){
+            printf("nota invalida\n");
+        }
+       } 
+        n2=-1;
+        while(n2>0 || n2<10){
+         scanf("%f",&n2);
+        if(n2<0 || n2>10){
+            printf("nota invalida\n");
+        }
+       } 
+          media = (n+n2)/2.0;  
+           printf("%.2f\n",media);
+        op=0;
+        while(op!=1 && op!=2){
+        printf("novo calculo (1-sim 2-nao)\n");
+         scanf("%d",&op);
+        }
+        
+    }
+    return 0;
 }
+*/
