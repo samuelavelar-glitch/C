@@ -1,0 +1,24 @@
+#include <stdio.h>
+ 
+int main() {
+  
+    int  n ,soma_total;
+    scanf("%d",&n);
+    int notas[n];
+    for(int i = 0 ; i<n ; i++){
+        scanf("%d",&notas[i]);
+       
+    }
+///aqui vai ficar o que falta///
+
+
+
+
+  
+    for(int i = 0 ; i< n ; i++){
+        printf("%d %d\n",i,notas[i]);
+        
+    }
+    
+    return 0;
+}
